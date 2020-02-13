@@ -16,6 +16,14 @@ This repository includes the `Dockerfile` and `docker-compose.yml` required to l
 
 ## Instructions
 
+You need a named volume for storing database files. You can rename the volume inside the `docker-compose.yml`, which is `database` by default.
+
+To create the volume, you can run:
+
+```shell script
+docker volume create database
+```
+
 Modify the files in the Files section as needed. Then run
 
 ```shell script

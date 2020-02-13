@@ -16,7 +16,5 @@ RUN npm run build
 
 WORKDIR /backend/build
 RUN npm install -g pm2
-COPY .env /backend/build/.env
-COPY static /frontend/build/static
 
 CMD ["pm2-runtime", "server.js"]
