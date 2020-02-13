@@ -8,6 +8,8 @@ services:
       - ./.env:/backend/build/.env:ro
       - ./static:/frontend/build/static:ro
       - ~:/files:ro
+    depends_on:
+      - database
   database:
     image: postgres:12
     ports:
